@@ -11,6 +11,7 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 a {
@@ -33,7 +34,7 @@ footer {
 }
 
 img {
-  max-height: 120px;
+  max-width: 520px;
 }
 
 .description,
@@ -58,17 +59,82 @@ footer {
 }
 
 button {
-	margin-top: 15px;
+  margin-top: 15px;
   background-color: #5f0e68;
   color: white;
   border: none;
-	font-size: 16px;
-	line-height: 16px;
+  font-size: 16px;
+  line-height: 16px;
   padding: 15px 30px;
   border-radius: 5px;
   cursor: pointer;
 }
 
 button:hover {
-	background-color: #0c47a5;
+  background-color: #0c47a5;
+}
+
+@media screen and (max-width: 600px) {
+  h2 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  img {
+    max-width: 250px;
+  }
+
+  .description,
+  li {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  button {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .description,
+  li {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  img {
+    max-width: 300px;
+  }
+
+  button {
+    font-size: 15px;
+    line-height: 15px;
+    padding: 12px 25px;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  h2 {
+    font-size: 34px;
+    line-height: 34px;
+  }
+
+  .description,
+  li {
+    font-size: 19px;
+    line-height: 25px;
+  }
+
+  button {
+    font-size: 15px;
+    line-height: 15px;
+    padding: 12px 25px;
+  }
 }
