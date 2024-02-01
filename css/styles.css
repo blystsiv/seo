@@ -15,8 +15,11 @@ body {
 }
 
 a {
-  text-decoration: none;
-  color: #007bff;
+  color: #ffffff;
+}
+
+a:hover {
+  color: #ffbdf5;
 }
 
 h2 {
